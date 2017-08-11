@@ -1,0 +1,115 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.my-container {
+    width: 100%;
+}
+
+/*头部*/
+
+.my-header {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+.my-header .my-navs {
+    position: absolute;
+    right: 20px;
+    list-style: none;
+}
+.my-header .my-navs li {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+.my-header .my-navs li a {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    color: #fff;
+}
+.my-header .my-navs li a:hover {
+    color: #fff;
+}
+.my-header .my-navs li:nth-child(3) {
+    border: 1px solid #fff;
+}
+.my-header .my-navs .my-nav:after {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-bottom: 1px solid #fff;
+    transition: all 0.4s ease 0s;
+}
+.my-header .my-navs .my-nav:hover::after {
+    width: 100%;
+}
+
+/*内容*/
+
+.my-content {
+    width: 100%;
+    position: relative;
+    background: #fff;
+}
+.my-content .my-intro {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(my-intro.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.my-content .my-intro .my-mask {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+}
+.my-content .my-mask p {
+    height: 200px;
+    line-height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    text-align: center;
+    font-size: 45pt;
+    color: #fff;
+    font-family: KaiTi;
+}
+.my-content .my-mask p span {
+    font-size: 25pt;
+}
+.my-content .my-message {
+    height: 1000px;
+}
+
+/*脚注*/
+
+.my-footer {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.8);
+}
+.my-footer p {
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+    width: 300px;
+    height: 150px;
+    line-height: 150px;
+    margin: 0px;
+    color: #fff;
+    text-align: center;
+    font-family: Helvetica;
+}
