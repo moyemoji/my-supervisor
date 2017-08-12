@@ -15,11 +15,13 @@
 <body>
     <div class='my-container'>
         <div class='my-header'>
-            <img>
+            <div class='my-logo'>
+                <a href='#'><img src='../src/logo.png'></a>
+            </div>
             <ul class='my-navs'>
-                <li><a class='my-nav'>团队动态</a></li>
-                <li><a class='my-nav'>学院导师</a></li>
-                <li><a>登录</a></li>
+                <li><a class='my-nav' href="#my-message">团队动态</a></li>
+                <li><a class='my-nav' href="#my-supervisor">学院导师</a></li>
+                <li><a class='w-100'>登录</a></li>
             </ul>
         </div>
         <div class='my-content'>
@@ -29,56 +31,229 @@
                         <br><span>发现 / 联系 / 评价</span></p>
                 </div>
             </section>
-            <section class='container my-message'>
+            <section class='container my-message' id='my-message'>
+                <div class='row'>
+                    <div class='col-12'>
+                        <h3 class='my-message-title'>团队动态</h3>
+                        <button class='my-add-message'></button>
+                    </div>
+
+                </div>
                 <div class='row'>
                     <ul class='col-12 col-xl-4 col-lg-4 col-md-6 col-sm-6 my-message-flow1'>
                         <div class='my-card w-100'>
-                            <img class='my-card-img img-fluid' src='./my-intro.jpg'>
+                            <img class='my-card-img img-fluid' src='../src/my-intro.jpg'>
                             <div class='my-card-text'>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
+                            <div class='my-card-info'>
+                                <span class='my-author'>张翔团队</span>
+                                <span class='my-time'>2017/8/12</span>
+                            </div>
                         </div>
                         <div class='my-card w-100'>
-                            <img class='my-card-img img-fluid' src='./my-intro.jpg'>
+                            <img class='my-card-img img-fluid' src='../src/my-intro.jpg'>
                             <div class='my-card-text'>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class='my-card-info'>
+                                <span class='my-author'>张翔团队</span>
+                                <span class='my-time'>2017/8/12</span>
                             </div>
                         </div>
                     </ul>
                     <ul class='col-12 col-xl-4 col-lg-4 col-md-6 col-sm-6 my-message-flow2'>
                         <div class='my-card w-100'>
-                            <img class='my-card-img img-fluid' src='./my-intro.jpg'>
+                            <img class='my-card-img img-fluid' src='../src/my-intro.jpg'>
                             <div class='my-card-text'>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
+                            <div class='my-card-info'>
+                                <span class='my-author'>张翔团队</span>
+                                <span class='my-time'>2017/8/12</span>
+                            </div>
                         </div>
                         <div class='my-card w-100'>
-                            <img class='my-card-img img-fluid' src='./my-intro.jpg'>
+                            <img class='my-card-img img-fluid' src='../src/my-intro.jpg'>
                             <div class='my-card-text'>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class='my-card-info'>
+                                <span class='my-author'>张翔团队</span>
+                                <span class='my-time'>2017/8/12</span>
                             </div>
                         </div>
                     </ul>
                     <ul class='col-12 col-xl-4 col-lg-4 col-md-6 col-sm-6 my-message-flow3'>
                         <div class='my-card w-100'>
-                            <img class='my-card-img img-fluid' src='./my-intro.jpg'>
+                            <img class='my-card-img img-fluid' src='../src/my-intro.jpg'>
                             <div class='my-card-text'>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.to build on the card title and make up the bulk of the card's content.</p>
                             </div>
+                            <div class='my-card-info'>
+                                <span class='my-author'>张翔团队</span>
+                                <span class='my-time'>2017/8/12</span>
+                            </div>
                         </div>
                         <div class='my-card w-100'>
-                            <img class='my-card-img img-fluid' src='./my-intro.jpg'>
+                            <img class='my-card-img img-fluid' src='../src/my-intro.jpg'>
                             <div class='my-card-text'>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class='my-card-info'>
+                                <span class='my-author'>张翔团队</span>
+                                <span class='my-time'>2017/8/12</span>
                             </div>
                         </div>
                     </ul>
                 </div>
+                <div class='row my-more'>
+                    <div class='col-12'>
+                        <button class=''></button>
+                    </div>
+
+                </div>
             </section>
-            <section class='container my-supervisor'></section>
+            <section class='container my-supervisor' id='my-supervisor'>
+                <div class='row'>
+                    <div class='col-12'>
+                        <h3 class='my-supervisor-title'>学院导师</h3>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 my-supervisor-group'>
+                        <div class='my-supervisor-card w-100'>
+                            <div class='my-supervisor-card-img' style='background:url(../src/card-head-1.jpg)'></div>
+                            <div class='my-avatar'>
+                                <span class='my-avatar-bg'></span>
+                                <img class='my-avatar-img' src='../src/avatar.jpg'>
+                            </div>
+                            <div class='my-name'>张翔<span>&nbsp;副教授</span></div>
+                            <div class='my-star'>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-half'></span>
+                                <span class='my-star-zero'></span>
+                                <span class='my-rank'>&nbsp;3.53</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 my-supervisor-group'>
+                        <div class='my-supervisor-card w-100'>
+                            <div class='my-supervisor-card-img' style='background:url(../src/card-head-2.jpg)'></div>
+                            <div class='my-avatar'>
+                                <span class='my-avatar-bg'></span>
+                                <img class='my-avatar-img' src='../src/avatar.jpg'>
+                            </div>
+                            <div class='my-name'>张翔<span>&nbsp;副教授</span></div>
+                            <div class='my-star'>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-half'></span>
+                                <span class='my-star-zero'></span>
+                                <span class='my-rank'>&nbsp;3.53</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 my-supervisor-group'>
+                        <div class='my-supervisor-card w-100'>
+                            <div class='my-supervisor-card-img' style='background:url(../src/card-head-3.jpg)'></div>
+                            <div class='my-avatar'>
+                                <span class='my-avatar-bg'></span>
+                                <img class='my-avatar-img' src='../src/avatar.jpg'>
+                            </div>
+                            <div class='my-name'>张翔<span>&nbsp;副教授</span></div>
+                            <div class='my-star'>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-half'></span>
+                                <span class='my-star-zero'></span>
+                                <span class='my-rank'>&nbsp;3.53</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 my-supervisor-group'>
+                        <div class='my-supervisor-card w-100'>
+                            <div class='my-supervisor-card-img' style='background:url(../src/card-head-4.jpg)'></div>
+                            <div class='my-avatar'>
+                                <span class='my-avatar-bg'></span>
+                                <img class='my-avatar-img' src='../src/avatar.jpg'>
+                            </div>
+                            <div class='my-name'>张翔<span>&nbsp;副教授</span></div>
+                            <div class='my-star'>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-half'></span>
+                                <span class='my-star-zero'></span>
+                                <span class='my-rank'>&nbsp;3.53</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 my-supervisor-group'>
+                        <div class='my-supervisor-card w-100'>
+                            <div class='my-supervisor-card-img' style='background:url(../src/card-head-5.jpg)'></div>
+                            <div class='my-avatar'>
+                                <span class='my-avatar-bg'></span>
+                                <img class='my-avatar-img' src='../src/avatar.jpg'>
+                            </div>
+                            <div class='my-name'>张翔<span>&nbsp;副教授</span></div>
+                            <div class='my-star'>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-half'></span>
+                                <span class='my-star-zero'></span>
+                                <span class='my-rank'>&nbsp;3.53</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 my-supervisor-group'>
+                        <div class='my-supervisor-card w-100'>
+                            <div class='my-supervisor-card-img' style='background:url(../src/card-head-1.jpg)'></div>
+                            <div class='my-avatar'>
+                                <span class='my-avatar-bg'></span>
+                                <img class='my-avatar-img' src='../src/avatar.jpg'>
+                            </div>
+                            <div class='my-name'>张翔<span>&nbsp;副教授</span></div>
+                            <div class='my-star'>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-half'></span>
+                                <span class='my-star-zero'></span>
+                                <span class='my-rank'>&nbsp;3.53</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-12 col-xl-3 col-lg-4 col-md-4 col-sm-6 my-supervisor-group'>
+                        <div class='my-supervisor-card w-100'>
+                            <div class='my-supervisor-card-img' style='background:url(../src/card-head-2.jpg)'></div>
+                            <div class='my-avatar'>
+                                <span class='my-avatar-bg'></span>
+                                <img class='my-avatar-img' src='../src/avatar.jpg'>
+                            </div>
+                            <div class='my-name'>张翔<span>&nbsp;副教授</span></div>
+                            <div class='my-star'>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-full'></span>
+                                <span class='my-star-half'></span>
+                                <span class='my-star-zero'></span>
+                                <span class='my-rank'>&nbsp;3.53</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
         <div class='my-footer'>
-            <img>
+            <div class='my-logo-1'>
+                <a href='#'><img src='../src/logo.png'><span>DAO SHI NET</span></a>
+            </div>
             <p>&copy;2017 YZM. ALL RIGHTS RESERVED.</p>
         </div>
     </div>
