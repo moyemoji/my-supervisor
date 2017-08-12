@@ -4,24 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>导师网</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="../bootsrtap/bootstrap.css">
 
     <script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="../bootsrtap/bootstrap.js"></script>
+    <script src='main.js'></script>
 </head>
 
 <body>
     <div class='my-container'>
+        <div class='my-container-mask'></div>
         <div class='my-header'>
             <div class='my-logo'>
                 <a href='#'><img src='../src/logo.png'></a>
             </div>
             <ul class='my-navs'>
-                <li><a class='my-nav' href="#my-message">团队动态</a></li>
-                <li><a class='my-nav' href="#my-supervisor">学院导师</a></li>
-                <li><a class='w-100'>登录</a></li>
+                <li><a class='my-nav' href="#my-message"><span>团队动态</span></a></li>
+                <li><a class='my-nav' href="#my-supervisor"><span>学院导师</span></a></li>
+                <li><a class='w-100' id='my-navbar-login-btn'><span>登录</span></a></li>
             </ul>
         </div>
         <div class='my-content'>
@@ -41,66 +43,66 @@
                 </div>
                 <div class='row'>
                     <ul class='col-12 col-xl-4 col-lg-4 col-md-6 col-sm-6 my-message-flow1'>
-                        <div class='my-card w-100'>
-                            <img class='my-card-img img-fluid' src='../src/my-intro.jpg'>
-                            <div class='my-card-text'>
+                        <div class='my-message-card w-100'>
+                            <img class='my-message-card-img img-fluid' src='../src/my-intro.jpg'>
+                            <div class='my-message-card-text'>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
-                            <div class='my-card-info'>
+                            <div class='my-message-card-info'>
                                 <span class='my-author'>张翔团队</span>
                                 <span class='my-time'>2017/8/12</span>
                             </div>
                         </div>
-                        <div class='my-card w-100'>
-                            <img class='my-card-img img-fluid' src='../src/my-intro.jpg'>
-                            <div class='my-card-text'>
+                        <div class='my-message-card w-100'>
+                            <img class='my-message-card-img img-fluid' src='../src/my-intro.jpg'>
+                            <div class='my-message-card-text'>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
-                            <div class='my-card-info'>
+                            <div class='my-message-card-info'>
                                 <span class='my-author'>张翔团队</span>
                                 <span class='my-time'>2017/8/12</span>
                             </div>
                         </div>
                     </ul>
                     <ul class='col-12 col-xl-4 col-lg-4 col-md-6 col-sm-6 my-message-flow2'>
-                        <div class='my-card w-100'>
-                            <img class='my-card-img img-fluid' src='../src/my-intro.jpg'>
-                            <div class='my-card-text'>
+                        <div class='my-message-card w-100'>
+                            <img class='my-message-card-img img-fluid' src='../src/my-intro.jpg'>
+                            <div class='my-message-card-text'>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
-                            <div class='my-card-info'>
+                            <div class='my-message-card-info'>
                                 <span class='my-author'>张翔团队</span>
                                 <span class='my-time'>2017/8/12</span>
                             </div>
                         </div>
-                        <div class='my-card w-100'>
-                            <img class='my-card-img img-fluid' src='../src/my-intro.jpg'>
-                            <div class='my-card-text'>
+                        <div class='my-message-card w-100'>
+                            <img class='my-message-card-img img-fluid' src='../src/my-intro.jpg'>
+                            <div class='my-message-card-text'>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
-                            <div class='my-card-info'>
+                            <div class='my-message-card-info'>
                                 <span class='my-author'>张翔团队</span>
                                 <span class='my-time'>2017/8/12</span>
                             </div>
                         </div>
                     </ul>
                     <ul class='col-12 col-xl-4 col-lg-4 col-md-6 col-sm-6 my-message-flow3'>
-                        <div class='my-card w-100'>
-                            <img class='my-card-img img-fluid' src='../src/my-intro.jpg'>
-                            <div class='my-card-text'>
+                        <div class='my-message-card w-100'>
+                            <img class='my-message-card-img img-fluid' src='../src/my-intro.jpg'>
+                            <div class='my-message-card-text'>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.to build on the card title and make up the bulk of the card's content.</p>
                             </div>
-                            <div class='my-card-info'>
+                            <div class='my-message-card-info'>
                                 <span class='my-author'>张翔团队</span>
                                 <span class='my-time'>2017/8/12</span>
                             </div>
                         </div>
-                        <div class='my-card w-100'>
-                            <img class='my-card-img img-fluid' src='../src/my-intro.jpg'>
-                            <div class='my-card-text'>
+                        <div class='my-message-card w-100'>
+                            <img class='my-message-card-img img-fluid' src='../src/my-intro.jpg'>
+                            <div class='my-message-card-text'>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
-                            <div class='my-card-info'>
+                            <div class='my-message-card-info'>
                                 <span class='my-author'>张翔团队</span>
                                 <span class='my-time'>2017/8/12</span>
                             </div>
@@ -256,9 +258,47 @@
             </div>
             <p>&copy;2017 YZM. ALL RIGHTS RESERVED.</p>
         </div>
+
+        <div class='my-login'>
+            <div class='my-login-header'>
+                <button class='login-active' id='my-login-btn'>登录</button>
+                <button id='my-register-btn'>注册</button>
+            </div>
+            <div class='my-login-content'>
+                <form>
+                    <input type='text' placeholder="请输入用户名">
+                    <input type='text' placeholder="请输入密码">
+                    <p>
+                        <input type='submit' value="确定">
+                        <input class='my-cancel-btn' type='button' value="取消">
+                    </p>
+                </form>
+            </div>
+            <div class='my-register-content'>
+                <form>
+                    <input type='text' placeholder="请输入用户名">
+                    <input type='text' placeholder="请输入密码1">
+                    <p>
+                        <input type='submit' value="确定">
+                        <input class='my-cancel-btn' type='button' value="取消">
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <div class='my-new-message'>
+            <form enctype="multipart/form-data" method="post">
+                <img id="preview" alt="" name="pic" />
+                <input type='file' class='my-upload-img' name="my-upload-img" id='my-upload-img'>
+                <textarea placeholder="在这里输入内容"></textarea>
+                <p>
+                    <input type='submit' value="">
+                    <input class='my-cancel-new-message' type='button'>
+                </p>
+            </form>
+        </div>
     </div>
 
-    <script src=""></script>
 </body>
 
 </html>
