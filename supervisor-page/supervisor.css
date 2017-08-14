@@ -63,8 +63,11 @@ body {
     color: #fff;
     text-decoration: none;
 }
-.my-header .my-navs li a:hover {
-    color: #fff;
+.my-header .my-navs li:hover {
+    background: #fff;
+}
+.my-header .my-navs li:hover a {
+    color: #000;
 }
 @media screen and (max-width:500px) {
     .my-header .my-navs {
@@ -79,7 +82,7 @@ body {
     .my-header .my-navs li a {
         width: 20px;
         height: 20px;
-        background: url(../src/login.png) no-repeat center center;
+        background: url(../src/img/login.png) no-repeat center center;
         background-size: contain;
     }
 }
@@ -93,7 +96,7 @@ body {
 .my-content .my-info-container {
     position: relative;
     width: 100%;
-    background-image: url(../src/my-intro.jpg);
+    background-image: url(../src/img/my-intro.jpg);
     background-size: cover;
     background-attachment: fixed;
     min-height: 500px;
@@ -121,7 +124,7 @@ body {
     display: inline-block;
     width: 25px;
     height: 25px;
-    background: url(../src/edit.png) no-repeat center center;
+    background: url(../src/img/edit.png) no-repeat center center;
     background-size: contain;
     outline: none;
     border: none;
@@ -142,7 +145,7 @@ body {
     display: inline-block;
     height: 200px;
     width: 150px;
-    background: url(../src/supervisor-head.png) no-repeat center center;
+    background: url(../src/img/supervisor-head.png) no-repeat center center;
 }
 .my-info-container .my-supervisor-head input[type='file'] {
     position: absolute;
@@ -160,9 +163,82 @@ body {
     margin-top: 100px;
 }
 @media screen and (min-width:991px) {
+    .my-comment .my-add-comment,
     .my-comment .my-comment-container {
         width: 60%;
     }
+}
+.my-add-comment p {
+    height: 40px;
+    line-height: 40px;
+    font-size: 25pt;
+}
+.my-add-comment form {
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out 0s;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+.my-add-comment .my-add-btn {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: none;
+    background: url(../src/img/add-message.png);
+    background-size: contain;
+}
+.my-add-comment textarea {
+    margin-top: 10px;
+    height: 180px;
+    padding: 15px;
+    border: none;
+    box-shadow: 0px 0px 10px #aaa;
+    transition: all 0.3s ease-in-out 0s;
+}
+.my-add-comment .my-add-star {
+    margin-top: 10px;
+}
+.my-add-comment .my-add-star .my-star-group {
+    position: relative;
+    width: 30px;
+    height: 30px !important;
+    float: left;
+    margin-right: 5px;
+}
+.my-add-comment .my-add-star label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background: url(../src/img/star-hollow.png) no-repeat center center;
+    background-size: contain;
+}
+.my-add-comment .my-add-star input[type='radio'] {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    visibility: hidden;
+}
+.my-add-comment .my-btn-group {
+    float: right;
+}
+.my-add-comment .my-btn-group input {
+    display: inline-block;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #aaa;
+    cursor: pointer;
+}
+.my-add-comment .my-btn-group input:hover {
+    background: #000;
 }
 .my-comment .my-comment-card {
     padding-top: 15px;
@@ -170,7 +246,7 @@ body {
     box-shadow: 0px 0px 8px #aaa;
     position: relative;
     transition: all 0.3s ease-in-out 0s;
-    margin-top:40px;
+    margin-top: 40px;
 }
 .my-comment .my-comment-card:hover {
     transform: translate(3px, 0px);
@@ -194,11 +270,11 @@ body {
     height: 20px;
 }
 .user-star .user-star-full {
-    background: url(../src/star-full.png) no-repeat center center;
+    background: url(../src/img/star-full.png) no-repeat center center;
     background-size: contain;
 }
 .user-star .user-star-zero {
-    background: url(../src/star-zero.png) no-repeat center center;
+    background: url(../src/img/star-zero.png) no-repeat center center;
     background-size: contain;
 }
 .user-approval {
@@ -217,11 +293,11 @@ body {
     cursor: pointer;
 }
 .user-approval .approve-btn {
-    background: url(../src/approve.png) no-repeat center center;
+    background: url(../src/img/approve.png) no-repeat center center;
     background-size: contain;
 }
 .user-approval .disapprove-btn {
-    background: url(../src/disapprove.png) no-repeat center center;
+    background: url(../src/img/disapprove.png) no-repeat center center;
     background-size: contain;
     position: relative;
     top: 3px;
@@ -231,10 +307,9 @@ body {
     text-align: center;
     padding-left: 5px;
 }
-
 .my-comment .my-more {
     text-align: center;
-    margin-top:40px;
+    margin-top: 40px;
 }
 @keyframes my-move {
     from {
@@ -250,7 +325,7 @@ body {
     border: none;
     width: 50px;
     height: 40px;
-    background: url(../src/bottom-arrow.png);
+    background: url(../src/img/bottom-arrow.png);
     background-position: center center;
     background-repeat: no-repeat;
     cursor: pointer;

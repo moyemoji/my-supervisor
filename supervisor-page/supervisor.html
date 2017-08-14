@@ -8,11 +8,11 @@
 
 
 
-    <!--    <script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>-->
-    <script src="../bootsrtap/bootstrap.js"></script>
+    <script src="../src/js/jquery-3.1.1.js"></script>
+    <script src="../src/js//bootstrap.js"></script>
     <script src="./supervisor.js"></script>
 
-    <link rel="stylesheet" href="../bootsrtap/bootstrap.css">
+    <link rel="stylesheet" href="../src/css/bootstrap.css">
     <link rel="stylesheet" href="supervisor.css">
 </head>
 
@@ -21,7 +21,7 @@
         <div class='my-container-mask'></div>
         <div class='my-header'>
             <div class='my-logo'>
-                <a href='#'><img src='../src/logo.png'></a>
+                <a href='#'><img src='../src/img/logo.png'></a>
             </div>
             <ul class='my-navs'>
                 <li><a class='w-100' id='my-navbar-login-btn'><span>登录</span></a></li>
@@ -118,12 +118,54 @@
 
             </div>
             <div class='my-comment'>
+                <div class='container my-add-comment'>
+                    <div class='row'>
+                        <div class='col-12 p-0'>
+                            <p>我也说一句
+                                <input type='button' class='my-add-btn'>
+                            </p>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <form class='col-12 col-xl-9 col-lg-9 col-md-9 col-sm-12 p-0'>
+                            <textarea class='w-100' placeholder="说说你对这个团队的了解"></textarea>
+                            <div class='my-add-star'>
+                                <div class='my-star-group'>
+                                    <label></label>
+                                    <input type='radio'>
+                                </div>
+                                <div class='my-star-group'>
+                                    <label></label>
+                                    <input type='radio'>
+                                </div>
+                                <div class='my-star-group'>
+                                    <label></label>
+                                    <input type='radio'>
+                                </div>
+                                <div class='my-star-group'>
+                                    <label></label>
+                                    <input type='radio'>
+                                </div>
+                                <div class='my-star-group'>
+                                    <label></label>
+                                    <input type='radio'>
+                                </div>
+
+                            </div>
+                            <div class='my-btn-group'>
+                                <input type='submit' value='匿名发布'>
+                                <input type='submit' value='发布'>
+                                <input type='button' value='取消'>
+                            </div>
+                        </form>
+                    </div>
+                </div>
                 <div class='container my-comment-container'>
                     <div class='row'>
                         <div class='col-12 my-comment-card'>
                             <div class='row'>
                                 <div class='col-xl-3 col-lg-3 col-md-3 col-sm-3'>
-                                    <img class='img-fluid user-head' src='../src/avatar.jpg'>
+                                    <img class='img-fluid user-head' src='../src/img/avatar.jpg'>
                                 </div>
                                 <div class='col-12 col-xl-9 col-lg-9 col-md-9 col-sm-9'>
                                     <p class='user-name'>陈瑞</p>
@@ -151,7 +193,7 @@
                         <div class='col-12 my-comment-card'>
                             <div class='row'>
                                 <div class='col-xl-3 col-lg-3 col-md-3 col-sm-3'>
-                                    <img class='img-fluid user-head' src='../src/avatar.jpg'>
+                                    <img class='img-fluid user-head' src='../src/img/avatar.jpg'>
                                 </div>
                                 <div class='col-12 col-xl-9 col-lg-9 col-md-9 col-sm-9'>
                                     <p class='user-name'>周哥</p>
@@ -183,7 +225,7 @@
 
             <div class='my-footer'>
                 <div class='my-logo-1'>
-                    <a href='#'><img src='../src/logo.png'><span>DAO SHI NET</span></a>
+                    <a href='#'><img src='../src/img/logo.png'><span>DAO SHI NET</span></a>
                 </div>
                 <p>&copy;2017 YZM. ALL RIGHTS RESERVED.</p>
             </div>

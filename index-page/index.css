@@ -66,6 +66,12 @@ body {
 .my-header .my-navs li:nth-child(3) {
     border: 1px solid #fff;
 }
+.my-header .my-navs li:nth-child(3):hover {
+    background: #fff;
+}
+.my-header .my-navs li:nth-child(3):hover a {
+    color: #000;
+}
 .my-header .my-navs .my-nav:after {
     position: absolute;
     left: 0px;
@@ -97,15 +103,15 @@ body {
         height: 20px;
     }
     .my-header .my-navs li:nth-child(1) a {
-        background: url(../src/message.png) no-repeat center center;
+        background: url(../src/img/message.png) no-repeat center center;
         background-size: contain;
     }
     .my-header .my-navs li:nth-child(2) a {
-        background: url(../src/supervisor.png) no-repeat center center;
+        background: url(../src/img/supervisor.png) no-repeat center center;
         background-size: contain;
     }
     .my-header .my-navs li:nth-child(3) a {
-        background: url(../src/login.png) no-repeat center center;
+        background: url(../src/img/login.png) no-repeat center center;
         background-size: contain;
     }
     .my-header .my-navs li a span {
@@ -124,7 +130,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(../src/my-intro.jpg);
+    background-image: url(../src/img/my-intro.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -173,7 +179,7 @@ body {
     float: right;
     width: 23px;
     height: 23px;
-    background: url(../src/add-message.png) no-repeat center center;
+    background: url(../src/img/add-message.png) no-repeat center center;
     background-size: contain;
     border: none;
     outline: none;
@@ -221,7 +227,7 @@ body {
     border: none;
     width: 50px;
     height: 40px;
-    background: url(../src/bottom-arrow.png);
+    background: url(../src/img/bottom-arrow.png);
     background-position: center center;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -252,7 +258,7 @@ body {
     position: absolute;
     right: -4px;
     top: -4px;
-    background: url(../src/crown-gold.png);
+    background: url(../src/img/crown-gold.png);
 }
 .my-content .my-supervisor .row .my-supervisor-group:nth-child(2) .my-avatar:after {
     content: '';
@@ -261,7 +267,7 @@ body {
     position: absolute;
     right: -4px;
     top: -4px;
-    background: url(../src/crown-silver.png);
+    background: url(../src/img/crown-silver.png);
 }
 .my-content .my-supervisor .row .my-supervisor-group:nth-child(3) .my-avatar:after {
     content: '';
@@ -270,7 +276,7 @@ body {
     position: absolute;
     right: -4px;
     top: -4px;
-    background: url(../src/crown-bronze.png);
+    background: url(../src/img/crown-bronze.png);
 }
 .my-content .my-supervisor-card:hover {
     opacity: 0.7;
@@ -332,15 +338,15 @@ body {
     height: 20px;
 }
 .my-content .my-star .my-star-full {
-    background: url(../src/star-full.png) no-repeat center center;
+    background: url(../src/img/star-full.png) no-repeat center center;
     background-size: contain;
 }
 .my-content .my-star .my-star-half {
-    background: url(../src/star-half.png) no-repeat center center;
+    background: url(../src/img/star-half.png) no-repeat center center;
     background-size: contain;
 }
 .my-content .my-star .my-star-zero {
-    background: url(../src/star-zero.png) no-repeat center center;
+    background: url(../src/img/star-zero.png) no-repeat center center;
     background-size: contain;
 }
 
@@ -529,7 +535,7 @@ body {
     display: inline-block;
     height: 200px;
     width: 100%;
-    background: url(../src/add-img.png) no-repeat center center;
+    background: url(../src/img/add-img.png) no-repeat center center;
     background-size: 50px;
 }
 .my-new-message input[type='file'] {
@@ -564,10 +570,10 @@ body {
     cursor: pointer;
 }
 .my-new-message p input:nth-child(1) {
-    background: url(../src/add.png) no-repeat center center;
+    background: url(../src/img/add.png) no-repeat center center;
     background-size: contain;
 }
 .my-new-message p input:nth-child(2) {
-    background: url(../src/cancel.png) no-repeat center center;
+    background: url(../src/img/cancel.png) no-repeat center center;
     background-size: contain;
 }
