@@ -12,6 +12,8 @@
          $(".my-new-message").css("marginTop", "-1000px");
          $(".my-container-mask").css("height", "0px");
          $(".my-login input[type='text']").val("");
+         $(".my-new-message textarea").val("");
+         $("#preview").attr("src","");
      })
      $(".my-cancel-btn").click(function () {
          $(".my-login").css("marginTop", "-1000px");
@@ -98,6 +100,8 @@
      $(".my-cancel-new-message").click(function () {
          $(".my-new-message").css("marginTop", "-1000px");
          $(".my-container-mask").css("height", "0px");
+         $(".my-new-message textarea").val("");
+         $("#preview").attr("src","");
      })
 
 

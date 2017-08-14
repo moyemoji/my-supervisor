@@ -530,6 +530,7 @@ body {
     height: 200px;
     width: 100%;
     background: url(../src/add-img.png) no-repeat center center;
+    background-size: 50px;
 }
 .my-new-message input[type='file'] {
     position: absolute;
@@ -562,11 +563,11 @@ body {
     border: none;
     cursor: pointer;
 }
-.my-new-message p input:nth-child(1){
-    background:url(../src/add.png) no-repeat center center;
-    background-size:contain;
+.my-new-message p input:nth-child(1) {
+    background: url(../src/add.png) no-repeat center center;
+    background-size: contain;
 }
-.my-new-message p input:nth-child(2){
-    background:url(../src/cancel.png) no-repeat center center;
-    background-size:contain;
+.my-new-message p input:nth-child(2) {
+    background: url(../src/cancel.png) no-repeat center center;
+    background-size: contain;
 }

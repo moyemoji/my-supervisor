@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导师网</title>
+    <link rel="stylesheet" href="../bootsrtap/bootstrap.css">
+    <link rel="stylesheet" href="supervisor.css">
+
+    <script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="../bootsrtap/bootstrap.js"></script>
+    <script src="./supervisor.js"></script>
+</head>
+
+<body>
+    <div class='my-container'>
+        <div class='my-container-mask'></div>
+        <div class='my-header'>
+            <div class='my-logo'>
+                <a href='#'><img src='../src/logo.png'></a>
+            </div>
+            <ul class='my-navs'>
+                <li><a class='w-100' id='my-navbar-login-btn'><span>登录</span></a></li>
+            </ul>
+        </div>
+
+
+        <div class='my-content'>
+            <div class='my-info-container'>
+                <div class='my-supervisor-info-mask'></div>
+                <div class='container my-supervisor-info'>
+                    <div class='my-edit'>
+                        <input type='button' />
+                    </div>
+
+                    <div class='row'>
+                        <div class='col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center'>
+                            <div class='my-supervisor-head'>
+                                <img class='img-fluid' id="preview" alt="" name="pic" />
+                                <input type='file' class='my-upload-img' name="my-upload-img" id='my-upload-img'>
+                            </div>
+                        </div>
+                        <div class='col-12 col-xl-8 col-lg-8 col-md-8 col-sm-12'>
+                            <div class='row'>
+                                <div class='col-3 col-xl-2 col-lg-2 col-md-3 col-sm-3 text-right'>
+                                    <label>姓名</label>
+                                </div>
+                                <div class='col-9 col-xl-10 col-lg-10 col-md-9 col-sm-9'>
+                                    <span class='my-name'>张翔</span>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-3 col-xl-2 col-lg-2 col-md-3 col-sm-3 text-right'>
+                                    <label>性别</label>
+                                </div>
+                                <div class='col-9 col-xl-10 col-lg-10 col-md-9 col-sm-9'>
+                                    <span class='my-sex'>男</span>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-3 col-xl-2 col-lg-2 col-md-3 col-sm-3 text-right'>
+                                    <label>职称</label>
+                                </div>
+                                <div class='col-9 col-xl-10 col-lg-10 col-md-9 col-sm-9'>
+                                    <span class='my-title'>副教授</span>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-3 col-xl-2 col-lg-2 col-md-3 col-sm-3 text-right'>
+                                    <label>出生年月</label>
+                                </div>
+                                <div class='col-9 col-xl-10 col-lg-10 col-md-9 col-sm-9'>
+                                    <span class='my-birth'>1982/11</span>
+                                </div>
+                            </div>
+
+                            <div class='row'>
+                                <div class='col-3 col-xl-2 col-lg-2 col-md-3 col-sm-3 text-right'>
+                                    <label>办公地点</label>
+                                </div>
+                                <div class='col-9 col-xl-10 col-lg-10 col-md-9 col-sm-9'>
+                                    <span class='my-office'>资环院308</span>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-3 col-xl-2 col-lg-2 col-md-3 col-sm-3 text-right'>
+                                    <label>邮箱</label>
+                                </div>
+                                <div class='col-9 col-xl-10 col-lg-10 col-md-9 col-sm-9'>
+                                    <span class='my-title'>XXX@whu.edu.cn</span>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-3 col-xl-2 col-lg-2 col-md-3 col-sm-3 text-right'>
+                                    <label>研究方向</label>
+                                </div>
+                                <div class='col-9 col-xl-10 col-lg-10 col-md-9 col-sm-9'>
+                                    <span class='my-study'>有很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多</span>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-3 col-xl-2 col-lg-2 col-md-3 col-sm-3 text-right'>
+                                    <label>项目经历</label>
+                                </div>
+                                <div class='col-9 col-xl-10 col-lg-10 col-md-9 col-sm-9'>
+                                    <span class='my-project'>有很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多很多</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class='my-comment'>
+                <div class='container'>
+                    <div class='row'>
+                        <div class='col-12 my-comment-card'>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class='my-footer'>
+            <div class='my-logo-1'>
+                <a href='#'><img src='../src/logo.png'><span>DAO SHI NET</span></a>
+            </div>
+            <p>&copy;2017 YZM. ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</body>
+
+</html>

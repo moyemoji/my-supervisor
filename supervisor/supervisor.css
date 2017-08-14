@@ -1,0 +1,209 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.my-container {
+    position: relative;
+    width: 100%;
+}
+.my-container-mask {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/*头部*/
+
+.my-header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+}
+.my-header .my-logo {
+    position: absolute;
+    left: 50px;
+    display: table;
+}
+.my-header .my-logo img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 30px;
+    vertical-align: middle;
+}
+.my-header .my-navs {
+    position: absolute;
+    right: 50px;
+    list-style: none;
+    top: 30px;
+    padding: 0px;
+}
+.my-header .my-navs li {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+.my-header .my-navs li a {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+.my-header .my-navs li a:hover {
+    color: #fff;
+}
+@media screen and (max-width:500px) {
+    .my-header .my-navs {
+        top: 40px;
+    }
+    .my-header .my-navs li {
+        width: 20px;
+        height: 20px;
+        border: none !important;
+        margin-left: 10px;
+    }
+    .my-header .my-navs li a {
+        width: 20px;
+        height: 20px;
+        background: url(../src/login.png) no-repeat center center;
+        background-size: contain;
+    }
+}
+
+/*内容*/
+
+.my-content {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100px;
+}
+.my-content .my-info-container {
+    position: relative;
+    width: 100%;
+    background-image: url(../src/my-intro.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.my-info-container .my-supervisor-info {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+.my-info-container .my-supervisor-info .my-edit {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.my-supervisor-info .my-edit input {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../src/edit.png) no-repeat center center;
+    background-size: contain;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.my-info-container .my-supervisor-info-mask {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.my-info-container .my-supervisor-head {
+    margin-bottom: 30px;
+}
+.my-info-container .my-supervisor-head img {
+    display: inline-block;
+    height: 200px;
+    width: 150px;
+    background: url(../src/supervisor-head.png) no-repeat center center;
+}
+.my-info-container .my-supervisor-head input[type='file'] {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    opacity: 0;
+}
+
+/*脚注*/
+
+.my-footer {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.8);
+}
+.my-footer .my-logo-1 {
+    position: absolute;
+    left: 50px;
+    display: table;
+}
+.my-footer .my-logo-1 img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 55px;
+    vertical-align: middle;
+}
+.my-footer .my-logo-1 span {
+    position: relative;
+    top: 55px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 25px;
+    font-family: KaiTi;
+    color: #fff;
+    font-size: 18pt;
+    vertical-align: middle;
+}
+.my-footer p {
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+    width: 300px;
+    height: 150px;
+    line-height: 150px;
+    margin: 0px;
+    color: #fff;
+    text-align: center;
+    font-family: Helvetica;
+}
+@media screen and (max-width:500px) {
+    .my-footer .my-logo-1 {
+        display: none;
+    }
+    .my-footer p {
+        font-size: 10pt;
+        position: relative;
+        width: 100%;
+        right: 0px;
+        bottom: 0px;
+    }
+}
