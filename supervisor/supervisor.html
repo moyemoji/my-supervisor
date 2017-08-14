@@ -5,12 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>导师网</title>
-    <link rel="stylesheet" href="../bootsrtap/bootstrap.css">
-    <link rel="stylesheet" href="supervisor.css">
 
-    <script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+
+    <!--    <script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>-->
     <script src="../bootsrtap/bootstrap.js"></script>
     <script src="./supervisor.js"></script>
+
+    <link rel="stylesheet" href="../bootsrtap/bootstrap.css">
+    <link rel="stylesheet" href="supervisor.css">
 </head>
 
 <body>
@@ -115,22 +118,75 @@
 
             </div>
             <div class='my-comment'>
-                <div class='container'>
+                <div class='container my-comment-container'>
                     <div class='row'>
                         <div class='col-12 my-comment-card'>
-                            
+                            <div class='row'>
+                                <div class='col-xl-3 col-lg-3 col-md-3 col-sm-3'>
+                                    <img class='img-fluid user-head' src='../src/avatar.jpg'>
+                                </div>
+                                <div class='col-12 col-xl-9 col-lg-9 col-md-9 col-sm-9'>
+                                    <p class='user-name'>陈瑞</p>
+                                    <p class='user-comment'>张翔老师是一个好老师，为人好，人聪明，发钱还多。张翔老师是一个好老师，为人好，人聪明，发钱还多。张翔老师是一个好老师，为人好，人聪明，发钱还多。张翔老师是一个好老师，为人好，人聪明，发钱还多。</p>
+
+                                    <div class='user-star'>
+                                        <span class='user-star-full'></span>
+                                        <span class='user-star-full'></span>
+                                        <span class='user-star-full'></span>
+                                        <span class='user-star-full'></span>
+                                        <span class='user-star-zero'></span>
+                                    </div>
+
+
+                                    <div class='user-approval'>
+                                        <input type='button' class='approve-btn' /><span class='approval-num'>100</span>
+                                        <input type='button' class='disapprove-btn' /><span class='disapproval-num'>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='row'>
+                        <div class='col-12 my-comment-card'>
+                            <div class='row'>
+                                <div class='col-xl-3 col-lg-3 col-md-3 col-sm-3'>
+                                    <img class='img-fluid user-head' src='../src/avatar.jpg'>
+                                </div>
+                                <div class='col-12 col-xl-9 col-lg-9 col-md-9 col-sm-9'>
+                                    <p class='user-name'>周哥</p>
+                                    <p class='user-comment'>张翔老师是一个好老师，为人好，人聪明，发钱还多。张翔老师是一个好老师，为人好，人聪明，发钱还多。张翔老师是一个好老师，为人好，人聪明，发钱还多。张翔老师是一个好老师，为人好，人聪明，发钱还多。</p>
+
+                                    <div class='user-star'>
+                                        <span class='user-star-full'></span>
+                                        <span class='user-star-full'></span>
+                                        <span class='user-star-full'></span>
+                                        <span class='user-star-full'></span>
+                                        <span class='user-star-zero'></span>
+                                    </div>
+
+
+                                    <div class='user-approval'>
+                                        <input type='button' class='approve-btn' /><span class='approval-num'>100</span>
+                                        <input type='button' class='disapprove-btn' /><span class='disapproval-num'>15</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class='my-more'>
+                    <button class=''></button>
+                </div>
             </div>
-        </div>
 
 
-        <div class='my-footer'>
-            <div class='my-logo-1'>
-                <a href='#'><img src='../src/logo.png'><span>DAO SHI NET</span></a>
+            <div class='my-footer'>
+                <div class='my-logo-1'>
+                    <a href='#'><img src='../src/logo.png'><span>DAO SHI NET</span></a>
+                </div>
+                <p>&copy;2017 YZM. ALL RIGHTS RESERVED.</p>
             </div>
-            <p>&copy;2017 YZM. ALL RIGHTS RESERVED.</p>
         </div>
     </div>
 </body>
