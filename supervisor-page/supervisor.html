@@ -129,33 +129,34 @@
                     <div class='row'>
                         <form class='col-12 col-xl-9 col-lg-9 col-md-9 col-sm-12 p-0'>
                             <textarea class='w-100' placeholder="说说你对这个团队的了解"></textarea>
+                            <input class='my-star-num'>
                             <div class='my-add-star'>
                                 <div class='my-star-group'>
+                                    <input type='radio' value="1" class='my-add-star-radio'>
                                     <label></label>
-                                    <input type='radio'>
                                 </div>
                                 <div class='my-star-group'>
+                                    <input type='radio' value="2" class='my-add-star-radio'>
                                     <label></label>
-                                    <input type='radio'>
                                 </div>
                                 <div class='my-star-group'>
+                                    <input type='radio' value="3" class='my-add-star-radio'>
                                     <label></label>
-                                    <input type='radio'>
                                 </div>
                                 <div class='my-star-group'>
+                                    <input type='radio' value="4" class='my-add-star-radio'>
                                     <label></label>
-                                    <input type='radio'>
                                 </div>
                                 <div class='my-star-group'>
-                                    <label></label>
-                                    <input type='radio'>
-                                </div>
 
+                                    <input type='radio' value="5" class='my-add-star-radio'>
+                                    <label></label>
+                                </div>
                             </div>
                             <div class='my-btn-group'>
-                                <input type='submit' value='匿名发布'>
-                                <input type='submit' value='发布'>
-                                <input type='button' value='取消'>
+                                <input class='my-anonymous-push' type='submit' value='匿名发布'>
+                                <input class='my-push' type='submit' value='发布'>
+                                <input class='my-cancel-push' type='button' value='取消'>
                             </div>
                         </form>
                     </div>
@@ -230,6 +231,34 @@
                 <p>&copy;2017 YZM. ALL RIGHTS RESERVED.</p>
             </div>
         </div>
+
+        <div class='my-login'>
+            <div class='my-login-header'>
+                <button class='login-active' id='my-login-btn'>登录</button>
+                <button id='my-register-btn'>注册</button>
+            </div>
+            <div class='my-login-content'>
+                <form>
+                    <input type='text' placeholder="请输入用户名">
+                    <input type='text' placeholder="请输入密码">
+                    <p>
+                        <input type='submit' value="确定">
+                        <input class='my-cancel-btn' type='button' value="取消">
+                    </p>
+                </form>
+            </div>
+            <div class='my-register-content'>
+                <form>
+                    <input type='text' placeholder="请输入用户名">
+                    <input type='text' placeholder="请输入密码1">
+                    <p>
+                        <input type='submit' value="确定">
+                        <input class='my-cancel-btn' type='button' value="取消">
+                    </p>
+                </form>
+            </div>
+        </div>
+
     </div>
 </body>
 
