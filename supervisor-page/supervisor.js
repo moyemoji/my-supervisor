@@ -20,6 +20,7 @@
      $(".my-container-mask").click(function () {
          $(".my-login").css("marginTop", "-1000px");
          $(".my-new-message").css("marginTop", "-1000px");
+         $(".my-edit-form").css("top","-1000px");
          $(".my-container-mask").css("height", "0px");
          $(".my-login input[type='text']").val("");
          $(".my-new-message textarea").val("");
@@ -69,4 +70,16 @@
              $(".my-add-star-radio").eq(i).prop("checked", "checked");
          }
      });
+     
+     //打开编辑框
+     $(".my-edit-btn input").click(function(){
+         var h = $(".my-container").height();
+         $(".my-edit-form").css("top","100px");
+         $(".my-container-mask").css("height", h);
+     })
+     //关闭编辑框
+     $(".cancel-edit-form").click(function(){
+         $(".my-edit-form").css("top","-1000px");
+         $(".my-container-mask").css("height", "0px");
+     })
  })

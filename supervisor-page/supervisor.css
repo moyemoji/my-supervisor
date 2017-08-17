@@ -115,12 +115,12 @@ body {
         width: 70%;
     }
 }
-.my-info-container .my-supervisor-info .my-edit {
+.my-info-container .my-supervisor-info .my-edit-btn {
     position: absolute;
     right: 15px;
     top: 15px;
 }
-.my-supervisor-info .my-edit input {
+.my-supervisor-info .my-edit-btn input {
     display: inline-block;
     width: 25px;
     height: 25px;
@@ -131,7 +131,7 @@ body {
     cursor: pointer;
     transition: all 0.4s ease-in-out 0s;
 }
-.my-supervisor-info .my-edit input:hover {
+.my-supervisor-info .my-edit-btn input:hover {
     transform: rotate(360deg);
 }
 .my-info-container .my-supervisor-info-mask {
@@ -513,4 +513,66 @@ body {
 .my-login .my-register-content p input:nth-child(2) {
     margin-left: -5px;
     border-left: 1px solid #d5d5d5;
+}
+
+/*资料编辑表单*/
+
+.my-edit-form {
+    width: 500px;
+    position: absolute;
+    top: -1000px;
+    left: 50%;
+    margin-left: -250px;
+    background: #fff;
+    padding: 30px;
+    z-index: 10001;
+}
+.my-edit-form .row {
+    margin-bottom: 10px;
+}
+.my-edit-form input,
+.my-edit-form select,
+.my-edit-form textarea {
+    padding: 0 8px !important;
+    outline: none;
+    border: none;
+    background: #d5d5d5;
+    height: 30px;
+}
+.my-edit-form select option {
+    background: #fff;
+}
+.my-edit-form textarea {
+    height: 50px;
+}
+.my-edit-form input[type='radio'] {
+    margin-left: 5px;
+    margin-right: 15px;
+}
+.my-edit-form .my-edit-form-btns {
+    margin-top: 25px;
+}
+.my-edit-form .my-edit-form-btns div:nth-child(1) {
+    border-right: 1px solid #aaa;
+}
+.my-edit-form .my-edit-form-btns input {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+}
+.my-edit-form .my-edit-form-btns input:hover {
+    color: #fff;
+    background: #000;
+}
+@media screen and (max-width:576px) {
+    .my-edit-form {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+    }
+    .my-edit-form label {
+        text-align: left !important;
+        padding-left: 0px;
+    }
 }
