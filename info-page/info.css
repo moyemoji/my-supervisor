@@ -84,11 +84,28 @@ body {
     .my-header .my-navs li a {
         width: 20px;
         height: 20px;
-        background: url(../src/img/login.png) no-repeat center center;
+    }
+    .my-header .my-navs li:nth-child(1) a {
+        background: url(../src/img/user.png) no-repeat center center;
+        background-size: contain;
+    }
+    .my-header .my-navs li:nth-child(2) a {
+        background: url(../src/img/edit.png) no-repeat center center;
+        background-size: contain;
+    }
+    .my-header .my-navs li:nth-child(3) a {
+        background: url(../src/img/change-password.png) no-repeat center center;
+        background-size: contain;
+    }
+    .my-header .my-navs li:nth-child(4) a {
+        background: url(../src/img/authorize.png) no-repeat center center;
         background-size: contain;
     }
     .my-header .my-navs li a span {
         display: none;
+    }
+    .my-header .my-navs li:hover {
+        background: none;
     }
 }
 
@@ -128,7 +145,7 @@ body {
 .my-basic {
     display: block;
 }
-.my-basic .my-avatar{
+.my-basic .my-avatar {
     margin-bottom: 20px;
 }
 .my-edit-basic .row,
@@ -207,7 +224,7 @@ body {
     .my-basic,
     .my-edit-basic,
     .my-change-password,
-    .my-authorize{
+    .my-authorize {
         width: 90%;
         left: 5%;
         margin-left: 0;

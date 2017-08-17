@@ -151,17 +151,9 @@ body {
     display: inline-block;
     height: 200px;
     width: 150px;
-    background: url(../src/img/supervisor-head.png) no-repeat center center;
+    background: url(../src/img/avatar.jpg) no-repeat center center;
 }
-.my-info-container .my-supervisor-head input[type='file'] {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    display: inline-block;
-    width: 100%;
-    height: 200px;
-    opacity: 0;
-}
+
 
 /*评论*/
 
@@ -532,7 +524,7 @@ body {
 .my-edit-form .row {
     margin-bottom: 10px;
 }
-.my-edit-form input,
+.my-edit-form input:not([type='file']),
 .my-edit-form select,
 .my-edit-form textarea {
     padding: 0 8px !important;

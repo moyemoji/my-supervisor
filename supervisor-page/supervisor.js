@@ -74,7 +74,7 @@
      //打开编辑框
      $(".my-edit-btn input").click(function(){
          var h = $(".my-container").height();
-         $(".my-edit-form").css("top","100px");
+         $(".my-edit-form").css("top","50px");
          $(".my-container-mask").css("height", h);
      })
      //关闭编辑框
