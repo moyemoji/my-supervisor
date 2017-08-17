@@ -1,0 +1,221 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.my-container {
+    position: relative;
+    width: 100%;
+    background-image: url(../src/img/my-intro.jpg);
+    background-size: cover;
+}
+.my-container:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/*头部*/
+
+.my-header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+}
+.my-header .my-logo {
+    position: absolute;
+    left: 50px;
+    display: table;
+}
+.my-header .my-logo img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 30px;
+    vertical-align: middle;
+}
+.my-header .my-navs {
+    position: absolute;
+    right: 50px;
+    list-style: none;
+    top: 30px;
+    padding: 0px;
+}
+.my-header .my-navs li {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+.my-header .my-navs li a {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+.my-header .my-navs li:hover {
+    background: #fff;
+}
+.my-header .my-navs li:hover a {
+    color: #000;
+}
+@media screen and (max-width:500px) {
+    .my-header .my-navs {
+        top: 40px;
+    }
+    .my-header .my-navs li {
+        width: 20px;
+        height: 20px;
+        border: none !important;
+        margin-left: 10px;
+    }
+    .my-header .my-navs li a {
+        width: 20px;
+        height: 20px;
+        background: url(../src/img/login.png) no-repeat center center;
+        background-size: contain;
+    }
+    .my-header .my-navs li a span {
+        display: none;
+    }
+}
+
+/*内容*/
+
+.my-content {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.my-basic,
+.my-edit-basic,
+.my-change-password {
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    padding: 10px;
+    color: #fff;
+    display: none;
+}
+.my-authorize {
+    position: absolute;
+    top: 50%;
+    margin-top: -140px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    height: 280px;
+    padding: 10px;
+    color: #fff;
+    overflow-y: auto;
+    display: none;
+}
+.my-basic {
+    display: block;
+}
+.my-edit-basic .row,
+.my-change-password .row {
+    margin-bottom: 10px;
+}
+.my-edit-basic input,
+.my-change-password input {
+    padding: 0 8px !important;
+    outline: none;
+    border: none;
+    background: none;
+    height: 30px;
+}
+.my-edit-basic input[type='text'],
+.my-change-password input[type='text'],
+.my-change-password input[type='password'] {
+    border: 1px solid #fff;
+    color: #fff;
+}
+.my-edit-basic input[type='radio'] {
+    margin-left: 5px;
+    margin-right: 15px;
+}
+.my-edit-basic .my-edit-basic-btns,
+.my-change-password .my-change-password-btns {
+    margin-top: 25px;
+}
+.my-edit-basic .my-edit-basic-btns input,
+.my-change-password .my-change-password-btns input {
+    display: inline-block;
+    height: 40px;
+    width: 85%;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+}
+.my-edit-basic .my-edit-basic-btns input:hover,
+.my-change-password .my-change-password-btns input:hover {
+    color: #000;
+    background: #fff;
+}
+.my-authorize ul {
+    list-style: none;
+    padding: 0;
+}
+.my-authorize ul li {
+    border: 1px solid #fff;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.my-authorize li span {
+    display: inline-block;
+    line-height: 50px;
+    padding-left: 20px;
+}
+.my-authorize li input {
+    display: inline-block;
+    float: right;
+    position: relative;
+    right: 10px;
+    top: 10px;
+    margin-left: 5px;
+    color: #fff;
+    background: none;
+    outline: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.my-authorize li input:hover {
+    color: #000;
+    background: #fff;
+}
+@media screen and (max-width:576px) {
+    .my-basic,
+    .my-edit-basic,
+    .my-change-password {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+    }
+    .my-basic label,
+    .my-edit-basic label,
+    .my-change-password label {
+        text-align: left !important;
+        padding-left: 0px;
+    }
+    .my-edit-basic .my-edit-basic-btns input,
+    .my-change-password .my-change-password-btns input {
+        width: 100%;
+    }
+}

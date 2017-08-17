@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导师网</title>
+    <script src="../src/js/jquery-3.1.1.js"></script>
+    <script src="../src/js//bootstrap.js"></script>
+    <script src="./info.js"></script>
+
+    <link rel="stylesheet" href="../src/css/bootstrap.css">
+    <link rel="stylesheet" href="info.css">
+</head>
+
+<body>
+    <div class='my-container'>
+        <div class='my-header'>
+            <div class='my-logo'>
+                <a href='#'><img src='../src/img/logo.png'></a>
+            </div>
+            <ul class='my-navs'>
+                <li><a class='w-100' onClick="showDiv('my-basic')"><span>基本资料</span></a></li>
+                <li><a class='w-100' onClick="showDiv('my-edit-basic')"><span>编辑资料</span></a></li>
+                <li><a class='w-100' onClick="showDiv('my-change-password')"><span>修改密码</span></a></li>
+                <li><a class='w-100' onClick="showDiv('my-authorize')"><span>授权管理</span></a></li>
+            </ul>
+        </div>
+
+        <div class='my-content'>
+            <div class='container my-basic'>
+                <div class='row'>
+                    <label class='col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 text-right'>ID</label>
+                    <span class='col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 text-left my-id'>111</span>
+                </div>
+                <div class='row'>
+                    <label class='col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 text-right'>性别</label>
+                    <span class='col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 text-left my-sex'>111</span>
+                </div>
+                <div class='row'>
+                    <label class='col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 text-right'>团队</label>
+                    <span class='col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 text-left my-group'>111</span>
+                </div>
+                <div class='row'>
+                    <label class='col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 text-right'>研究方向</label>
+                    <span class='col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 text-left my-interest'>111</span>
+                </div>
+            </div>
+            <div class='container my-edit-basic'>
+                <form>
+                    <div class='row'>
+                        <label class='col-12 col-xl-3 col-lg-3 col-md-3 col-sm-3 text-right'>头像</label>
+                        <input type='file' class='col-12 col-xl-8 col-lg-8 col-md-8 col-sm-8'>
+                    </div>
+                    <div class='row'>
+                        <label class='col-12 col-xl-3 col-lg-3 col-md-3 col-sm-3 text-right'>性别</label>
+                        <label for="male">男</label>
+                        <input type='radio' name="sex" id="male">
+                        <label for="female">女</label>
+                        <input type='radio' name="sex" id="female">
+                    </div>
+                    <div class='row'>
+                        <label class='col-12 col-xl-3 col-lg-3 col-md-3 col-sm-3 text-right'>团队</label>
+                        <input type='text' class='col-12 col-xl-8 col-lg-8 col-md-8 col-sm-8'>
+                    </div>
+                    <div class='row'>
+                        <label class='col-12 col-xl-3 col-lg-3 col-md-3 col-sm-3 text-right'>研究方向</label>
+                        <input type='text' class='col-12 col-xl-8 col-lg-8 col-md-8 col-sm-8'>
+                    </div>
+                    <div class='row my-edit-basic-btns'>
+                        <div class='col-6 text-right p-0'>
+                            <input type='submit' value='提交'>
+                        </div>
+                        <div class='col-6 text-left p-0'>
+                            <input type='button' class='cancel-edit-form' value='取消'>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class='container my-change-password'>
+                <form>
+                    <div class='row'>
+                        <label class='col-12 col-xl-3 col-lg-3 col-md-3 col-sm-3 text-right'>旧密码</label>
+                        <input type='password' class='col-12 col-xl-8 col-lg-8 col-md-8 col-sm-8'>
+                    </div>
+                    <div class='row'>
+                        <label class='col-12 col-xl-3 col-lg-3 col-md-3 col-sm-3 text-right'>新密码</label>
+                        <input type='password' class='col-12 col-xl-8 col-lg-8 col-md-8 col-sm-8'>
+                    </div>
+                    <div class='row'>
+                        <label class='col-12 col-xl-3 col-lg-3 col-md-3 col-sm-3 text-right'>确认新密码</label>
+                        <input type='password' class='col-12 col-xl-8 col-lg-8 col-md-8 col-sm-8'>
+                    </div>
+                    <div class='row my-change-password-btns'>
+                        <div class='col-6 text-right p-0'>
+                            <input type='submit' value='提交'>
+                        </div>
+                        <div class='col-6 text-left p-0'>
+                            <input type='button' class='cancel-edit-form' value='取消'>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class='container my-authorize'>
+                <ul>
+                    <li>
+                        <span class='my-apply-id'>xxx</span>
+                        <input type='button' value='允许'>
+                        <input type='button' value='拒绝'>
+                    </li>
+                    <li>
+                        <span class='my-apply-id'>xxx</span>
+                        <input type='button' value='允许'>
+                        <input type='button' value='拒绝'>
+                    </li>
+                    <li>
+                        <span class='my-apply-id'>xxx</span>
+                        <input type='button' value='允许'>
+                        <input type='button' value='拒绝'>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

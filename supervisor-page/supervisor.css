@@ -85,6 +85,9 @@ body {
         background: url(../src/img/login.png) no-repeat center center;
         background-size: contain;
     }
+    .my-header .my-navs li a span {
+        display: none;
+    }
 }
 
 /*内容*/
@@ -104,7 +107,6 @@ body {
     padding-bottom: 100px;
 }
 .my-info-container .my-supervisor-info {
-    background: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -117,8 +119,8 @@ body {
 }
 .my-info-container .my-supervisor-info .my-edit-btn {
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 25px;
+    top: 25px;
 }
 .my-supervisor-info .my-edit-btn input {
     display: inline-block;
@@ -140,7 +142,7 @@ body {
     top: 0px;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
 }
 .my-info-container .my-supervisor-head {
     margin-bottom: 30px;
