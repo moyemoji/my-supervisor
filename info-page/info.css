@@ -128,6 +128,9 @@ body {
 .my-basic {
     display: block;
 }
+.my-basic .my-avatar{
+    margin-bottom: 20px;
+}
 .my-edit-basic .row,
 .my-change-password .row {
     margin-bottom: 10px;
@@ -203,12 +206,12 @@ body {
 @media screen and (max-width:576px) {
     .my-basic,
     .my-edit-basic,
-    .my-change-password {
-        width: 100%;
-        left: 0;
+    .my-change-password,
+    .my-authorize{
+        width: 90%;
+        left: 5%;
         margin-left: 0;
     }
-    .my-basic label,
     .my-edit-basic label,
     .my-change-password label {
         text-align: left !important;
