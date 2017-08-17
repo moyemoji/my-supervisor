@@ -38,7 +38,7 @@
      })
 
      //header区域的背景
-     var height = $(window).height();
+     var height = $(window).height()-100;
      $(window).scroll(function () {
          if ($(window).scrollTop() > height) {
              $(".my-header").css("background", "rgba(0,0,0,0.8)");
