@@ -13,7 +13,7 @@
      $("#my-navbar-login-btn").click(function () {
          var h = $(".my-container").height();
          $(".my-container-mask").css("height", h);
-         $(".my-login").css("marginTop", "-160px");
+         $(".my-login").css("z-index","10001").css("marginTop", "-160px");
      })
 
      //关闭登录框
